@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("glassdoor_jobs.csv")
+df = pd.read_csv("D:\\Data_Science_Salary\\DataScience_Salary\\glassdoor_jobs.csv")
 
 # salary parsing
 
@@ -26,7 +26,8 @@ df["Same State"] = df.apply(lambda x: 1 if x.Location == x.Headquarters else 0,a
 
 # age of the company
 
-df["Age"] = df.Founded.apply(lambda x: x if x < -1 else 2024 - x)
+df["Founded"] = df["Founded"].astype(int)
+df["Age"] = df.Founded.apply(lambda x: -1 if x < 1 else 2024 - x)
 
 # parsing of job discription (python, etc)
 # python 
@@ -48,4 +49,4 @@ df.Excel_yn.value_counts()
 # Dropping redundant columns
 df.drop("Unnamed: 0",axis=1,inplace=True)
 
-df.to_csv("salary_cleaned.csv",index=False)
+df.to_csv("salary_cleaned2.csv",index=False)
