@@ -28,3 +28,6 @@ After scraping the data, I needed to clean it up so that it was usable for our m
   - Spark
 - Column for simplified job title and Seniority
 - Column for description length
+
+## EDA  
+Analyzed the categorical and numerical data in order to understand what is the correlation between various features.
