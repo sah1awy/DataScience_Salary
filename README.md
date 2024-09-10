@@ -1,6 +1,5 @@
 # Data Science Salary Analysis
 - Created a tool that estimates data science salaries to help data scientists negotiate their income when they get a job.
-- Scraped over 1000 job descriptions from glassdoor using python and selenium
 - Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark.
 - Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model.
 - Built a client facing API using flask
@@ -30,4 +29,9 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 - Column for description length
 
 ## EDA  
-Analyzed the categorical and numerical data in order to understand what is the correlation between various features.
+Analyzed the categorical and numerical data in order to understand what is the correlation between various features.  
+
+![Alt text](i1.png)
+![Alt text](i2.png)
+
+
